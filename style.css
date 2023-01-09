@@ -1,0 +1,231 @@
+.container{
+    background-image: url("/assets/background.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    padding: 0px 100px;
+
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper-cards {
+    display: none;
+    height: 100%;    
+}
+
+.cards {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.hexagon {
+    width: 300px;
+    height: 165px;
+    position: relative;
+}
+  
+.hexagon, 
+.hexagon:before, 
+.hexagon:after {
+    background: #58B19F;
+    box-shadow: 10px -10px 10px rgba(0,0,0,0.6);   
+}
+  
+.hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    left: 62px;
+    width: 176px;
+    height: 171px;
+    transform: rotate(145deg) skew(22.5deg);
+  }
+  
+  .hexagon:before {
+    top: -86px;
+  }
+  
+  .hexagon:after {
+    top: 115px;
+  }
+  
+  .hexagon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background: #58B19F;
+    z-index: 1;
+    text-align: center;
+  }
+  .image {
+    margin-top: -20px;
+    height: 150px;
+
+  }
+
+  .features{
+    list-style: none;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    color: #FFFFFF;
+  }
+
+/* CSS */
+.intro-button {
+    appearance: button;
+    background-color: #58B19F;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.intro-button:after {
+    background-clip: padding-box;
+    background-color: #58B19F;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.intro-button:main,
+.intro-button:focus {
+    user-select: auto;
+}
+
+.intro-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.intro-button:disabled {
+    cursor: auto;
+}
+
+.wrapper-intro {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.final-mesages {
+    height: 100%;
+    display:none;
+    align-items: center;
+    justify-content:center
+}
+
+.final-mesages p {
+    font-family:'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .hexagon {
+        width: 150px;
+        height: 82.5px;
+    }
+      
+    .hexagon:before,
+      .hexagon:after {
+        left: 31px;
+        width: 88px;
+        height: 85.5px;
+      }
+      
+      .hexagon:before {
+        top: -43px;
+      }
+      
+      .hexagon:after {
+        top: 57.5px;
+      }
+      
+      .hexagon span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100px;
+        background: #58B19F;
+        z-index: 1;
+        text-align: center;
+      }
+      
+      .image {
+        margin-top: -20px;
+        height: 75px;
+    
+      } 
+
+      .features {
+        font-size: 10px;
+      }
+
+      .final-mesages p {
+        margin-top:5px;
+      }
+}
+
+@media only screen and (max-width: 970px) { 
+    .cards {
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 20px;
+    }
+
+    .hexagon {
+        margin: 50px 0px;
+    }
+}

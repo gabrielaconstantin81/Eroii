@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+        <title>Eroii</title>
+    </head>
+    <body>
+        <script src="main.js"></script>
+
+        <div class="container">
+            <div class="wrapper-cards" id="step2">
+                <div class="cards">
+                    <div class="hexagon">
+                        <span>
+                            <img
+                                src="/assets/dragon.png"
+                                class="image"
+                                alt=""
+                            />
+                            <ul class="features">
+                                <li><strong>Name:</strong> Meriem</li>
+                                <li><strong>HP:</strong> 43</li>
+                                <li><strong>Can Fly:</strong> Yes</li>
+                                <li><strong>Shield:</strong> Yes</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="hexagon">
+                        <span>
+                            <img src="/assets/dwarf.png" class="image" alt="" />
+                            <ul class="features">
+                                <li><strong>Name:</strong> Alfredo</li>
+                                <li><strong>HP:</strong> 40</li>
+                                <li><strong>Can Fly:</strong> No</li>
+                                <li><strong>Shield:</strong> Yes</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="hexagon">
+                        <span>
+                            <img
+                                src="/assets/sprite.png"
+                                class="image"
+                                alt=""
+                            />
+                            <ul class="features">
+                                <li><strong>Name:</strong> Easy</li>
+                                <li><strong>HP:</strong> 45</li>
+                                <li><strong>Can Fly:</strong> Yes</li>
+                                <li><strong>Shield:</strong> No</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <button
+                    class="intro-button"
+                    role="button"
+                    onClick='document.getElementById("step2").style.display = "none";document.getElementById("step3").style.display = "flex"'
+                >
+                    START FIGHT
+                </button>
+            </div>
+
+            <div class="wrapper-intro" id="step1">
+                <button
+                    class="intro-button"
+                    role="button"
+                    onClick='document.getElementById("step1").style.display = "none";document.getElementById("step2").style.display = "block"'
+                >
+                    SHOW HEROES
+                </button>
+            </div>
+            <div class="final-mesages" id="step3">
+                <div class="hexagon">
+                    <span>
+                        <p>Pentru detaliile jocului deschide Console</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
